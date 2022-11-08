@@ -498,7 +498,6 @@
             'ajax': {
                 'url': '<?= base_url('admin/getdatashift') ?>',
                 'dataSrc': function(result) {
-                    console.log(result)
                     return result
                 }
             },
@@ -587,7 +586,6 @@
     });
 
     function deleteid(data) {
-        console.log(data)
         $.ajax({
             url: '<?= base_url('admin/hapusid') ?>',
             data: {
@@ -597,7 +595,6 @@
             type: 'post',
             dataType: 'json',
             success: function(result) {
-                console.log(result)
                 if (result == 200) {
                     Swal.fire({
                         position: 'top-end',
@@ -699,7 +696,6 @@
                 type: 'post',
                 dataType: 'json',
                 success: function(result) {
-                    console.log(result)
                     if (result == 200) {
                         Swal.fire({
                             position: 'top-end',
@@ -776,7 +772,6 @@
                 type: 'post',
                 dataType: 'json',
                 success: function(result) {
-                    console.log(result)
                     if (result == 200) {
                         Swal.fire({
                             position: 'top-end',

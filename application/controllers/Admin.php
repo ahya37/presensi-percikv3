@@ -87,6 +87,16 @@ class Admin extends CI_Controller
         $this->load->view('template/footer');
     }
 
+    public function laporan()
+    {
+        $data['jd'] = '1';
+        $data['title'] = 'Absensi | Laporan';
+        $this->load->view('template/header', $data);
+        $this->load->view('template/sidebar');
+        $this->load->view('laporan');
+        $this->load->view('template/footer');
+    }
+
     public function getDataCount()
     {
         $data = [];

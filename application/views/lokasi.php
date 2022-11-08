@@ -192,7 +192,6 @@
     }
 
     $('#submit').submit(function(e) {
-        console.log('ok')
         e.preventDefault();
         $.ajax({
             url: '<?php echo base_url('admin/addLocation'); ?>',

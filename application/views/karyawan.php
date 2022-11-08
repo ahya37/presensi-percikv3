@@ -727,7 +727,6 @@
                                                         $('body').removeClass('loading');
                                                         $('#loading-text').hide()
                                                         $('.btn-back').show()
-                                                        console.log('error')
                                                     }
                                                 })
                                             // }

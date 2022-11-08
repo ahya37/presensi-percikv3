@@ -173,7 +173,6 @@
             'ajax': {
                 'url': '<?= base_url('admin/getdetilserial') ?>',
                 'dataSrc': function(result) {
-                    console.log(result)
                     return result
                 }
             },
@@ -222,7 +221,6 @@
                     type: 'post',
                     dataType: 'json',
                     success: function(result) {
-                        console.log(result)
                         if (result == 200) {
                             Swal.fire(
                                 'Deleted!',
@@ -262,7 +260,6 @@
             dataType: 'json',
             success: function(result) {
                 result.forEach(d => {
-                    console.log(d.val)
                     if (d.val == 200) {
                         //logic insert ke database
                         $.ajax({
@@ -327,7 +324,6 @@
                 type: 'post',
                 dataType: 'json',
                 success: function(result) {
-                    console.log(result)
                     if (result == 200) {
                         Swal.fire({
                             position: 'top-end',

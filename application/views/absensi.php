@@ -222,7 +222,6 @@
                     }
                 },
                 'dataSrc': function(result) {
-                    console.log(result)
                     return result
                 }
             },
@@ -269,7 +268,6 @@
                     "className": 'text-center',
                     'render': function(data) {
                         var ci = data.clock_in
-                        // console.log(ci)
                         if (ci == '0000-00-00 00:00:00') {
                             var render = `
                                 <div style="margin-top:5px;">${data.clock_in}</div>

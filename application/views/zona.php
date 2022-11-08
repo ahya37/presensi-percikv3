@@ -122,7 +122,6 @@
             'ajax': {
                 'url': '<?= base_url('admin/getzona') ?>',
                 'dataSrc': function(result) {
-                    console.log(result)
                     return result
                 }
             },
@@ -190,7 +189,6 @@
             type: 'post',
             dataType: 'json',
             success: function(result) {
-                console.log(result)
                 if (result == 200) {
                     Swal.fire({
                         position: 'top-end',
@@ -221,7 +219,6 @@
             type: 'post',
             dataType: 'json',
             success: function(result) {
-                console.log(result)
                 if (result == 200) {
                     Swal.fire({
                         position: 'top-end',

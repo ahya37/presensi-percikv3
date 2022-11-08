@@ -42,6 +42,12 @@
                         <span>Shift</span>
                     </a>
                 </li>
+                <li class="<?= ($uri == "laporan") ? "active" : ""; ?>">
+                    <a href="<?= base_url('admin/laporan') ?>">
+                        <i class="material-icons">assignment</i>
+                        <span>Laporan</span>
+                    </a>
+                </li>
 
                 <li class="<?= ($uri == "user" || $uri == "zona") ? "active" : ""; ?>">
                     <a href="javascript:void(0);" class="menu-toggle">
